@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estilizada</title>
+    <style>
+        /* Estilo geral da tabela */
+        table {
+            border-collapse: collapse; /* Bordas colapsadas */
+            width: 80%; /* Largura da tabela */
+            margin: 20px auto; /* Centraliza a tabela */
+        }
+
+        /* Estilo das células */
+        th, td {
+            border: 1px solid #ddd; /* Borda em todas as células */
+            padding: 8px; /* Espaçamento interno nas células */
+            text-align: center; /* Alinhamento central do texto */
+        }
+
+        /* Estilo do cabeçalho */
+        th {
+            background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
+            font-weight: bold; /* Texto em negrito */
+        }
+
+        /* Estilo da legenda da tabela */
+        caption {
+            font-weight: bold; /* Texto em negrito na legenda */
+            text-align: center; /* Alinhamento central da legenda */
+            margin-bottom: 10px; /* Espaçamento abaixo da legenda */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Produtos</h1>
+    <caption></caption> <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>Vestuário</td>
+                <td>R$ 50,00</td>
+                <td>2</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Caderno</td>
+                <td>Papelaria</td>
+                <td>R$ 15,00</td>
+                <td>3</td>
+                <td>R$ 45,00</td>
+            </tr>
+            <tr>
+                <td>Teclado</td> 
+                <td>Acessórios</td>
+                <td>R$ 80,00</td>
+                <td>1</td>
+                <td>R$ 80,00</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>Acessórios</td>
+                <td>R$ 35,00</td>
+                <td>1</td>
+                <td>R$ 35,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Total</td> <td></td>
+                <td></td>
+                <td></td>
+                <td><strong>R$ 260,00</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
