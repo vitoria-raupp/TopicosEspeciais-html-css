@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        /* Estilos opcionais para melhorar a aparência do formulário */
+        body {
+            font-family: sans-serif;
+        }
+
+        form {
+            width: 500px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 230px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>Formulário de Cadastro</h1>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="sexo">Sexo:</label>
+        <div>
+            <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="sexo" value="outro">
+            <label for="outro">Outro</label>
+        </div>
+
+        <label for="linguagens">Linguagens de Programação:</label>
+        <div>
+            <input type="checkbox" id="python" name="linguagens[]" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="linguagens[]" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="leitura" name="linguagens[]" value="leitura">
+            <label for="leitura">Leitura</label>
+            <input type="checkbox" id="viagens" name="linguagens[]" value="viagens">
+            <label for="viagens">Viagens</label>
+        </div>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+        <button type="submit">Enviar </button>
+    </form>
+</body>
+</html>
